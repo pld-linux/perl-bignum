@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Math
-%define	pnam	bignum
+%define		pdir	Math
+%define		pnam	bignum
 Summary:	bignum - Transparent BigNumber support for Perl
 Summary(pl):	bignum - przezroczysta obs³uga wielkich liczb dla Perla
 Name:		perl-bignum
