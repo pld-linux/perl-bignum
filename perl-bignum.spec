@@ -52,7 +52,6 @@ wystarczaj±ce do usprawiedliwienia dowolnego pakietu perlowego ;)
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-
 %{__make}
 
 %{?with_tests:%{__make} test}
