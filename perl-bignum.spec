@@ -8,23 +8,23 @@
 Summary:	bignum - Transparent BigNumber support for Perl
 Summary(pl):	bignum - przezroczysta obs³uga wielkich liczb dla Perla
 Name:		perl-bignum
-Version:	0.15
-Release:	3
+Version:	0.16
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
-# Source0-md5:	b3a08efe68348b1de4f8927e2a81f88a
+# Source0-md5:	e93eb7dd1685b30149f53cd90d190a6b
 %if %{with tests}
-BuildRequires:	perl-Math-BigInt >= 1.70
-BuildRequires:	perl(Math::BigFloat) >= 1.44
-BuildRequires:	perl-Math-BigRat >= 0.12
+BuildRequires:	perl-Math-BigInt >= 1.74
+BuildRequires:	perl(Math::BigFloat) >= 1.48
+BuildRequires:	perl-Math-BigRat >= 0.14
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-Math-BigInt >= 1.70
-Requires:	perl(Math::BigFloat) >= 1.44
-Requires:	perl-Math-BigRat >= 0.12
+Requires:	perl-Math-BigInt >= 1.74
+Requires:	perl(Math::BigFloat) >= 1.48
+Requires:	perl-Math-BigRat >= 0.14
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
