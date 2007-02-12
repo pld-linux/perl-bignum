@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	bignum
 Summary:	bignum - Transparent BigNumber support for Perl
-Summary(pl):	bignum - przezroczysta obs³uga wielkich liczb dla Perla
+Summary(pl.UTF-8):   bignum - przezroczysta obsÅ‚uga wielkich liczb dla Perla
 Name:		perl-bignum
 Version:	0.17
 Release:	1
@@ -37,14 +37,14 @@ optionally Math::BigInt::Lite.
 It's a great way for writing impressing onliners, which is almost
 enough to justify any Perl package ;)
 
-%description -l pl
-Ten pakiet u³atwia pisanie skryptów u¿ywaj±cych BigInt/BigFloat w
-sposób przezroczysty. U¿ywaj± przepisanej wersji Math::BigInt 
+%description -l pl.UTF-8
+Ten pakiet uÅ‚atwia pisanie skryptÃ³w uÅ¼ywajÄ…cych BigInt/BigFloat w
+sposÃ³b przezroczysty. UÅ¼ywajÄ… przepisanej wersji Math::BigInt 
 i Math::BigFloat, Math::BigRat (w bigrat) oraz opcjonalnie
 Math::BigInt::Lite.
 
-Jest to ¶wietny sposób to pisania jednolinijkowców, które s± prawie
-wystarczaj±ce do usprawiedliwienia dowolnego pakietu perlowego ;)
+Jest to Å›wietny sposÃ³b to pisania jednolinijkowcÃ³w, ktÃ³re sÄ… prawie
+wystarczajÄ…ce do usprawiedliwienia dowolnego pakietu perlowego ;)
 
 %prep
 %setup -q -n %{pnam}-%{version}
