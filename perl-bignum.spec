@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	bignum
 Summary:	bignum - Transparent BigNumber support for Perl
-Summary(pl.UTF-8):   bignum - przezroczysta obsługa wielkich liczb dla Perla
+Summary(pl.UTF-8):	bignum - przezroczysta obsługa wielkich liczb dla Perla
 Name:		perl-bignum
 Version:	0.17
 Release:	1
