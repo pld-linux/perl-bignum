@@ -8,23 +8,23 @@
 Summary:	bignum - Transparent BigNumber support for Perl
 Summary(pl.UTF-8):	bignum - przezroczysta obsługa wielkich liczb dla Perla
 Name:		perl-bignum
-Version:	0.17
+Version:	0.21
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pnam}-%{version}.tar.gz
-# Source0-md5:	c206fc40355350733804bfb31c889046
+Source0:	http://www.cpan.org/modules/by-module/Math/%{pnam}-%{version}.tar.gz
+# Source0-md5:	090532fad1dec171da009688dae3cd4e
+URL:		http://search.cpan.org/dist/bignum/
 %if %{with tests}
-BuildRequires:	perl-Math-BigInt >= 1.74
-BuildRequires:	perl(Math::BigFloat) >= 1.48
-BuildRequires:	perl-Math-BigRat >= 0.14
+BuildRequires:	perl-Math-BigInt >= 1.83
+BuildRequires:	perl-Math-BigRat >= 0.19
+BuildRequires:	perl-Test-Simple >= 0.47
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-Math-BigInt >= 1.74
-Requires:	perl(Math::BigFloat) >= 1.48
-Requires:	perl-Math-BigRat >= 0.14
+Requires:	perl-Math-BigInt >= 1.83
+Requires:	perl-Math-BigRat >= 0.19
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -68,6 +68,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc BUGS CHANGES README TODO
-%{perl_vendorlib}/big*.pm
-%{perl_vendorlib}/Math/Big*/Trace.pm
-%{_mandir}/man3/*
+%{perl_vendorlib}/bigint.pm
+%{perl_vendorlib}/bignum.pm
+%{perl_vendorlib}/bigrat.pm
+%dir %{perl_vendorlib}/Math/BigFloat
+%{perl_vendorlib}/Math/BigFloat/Trace.pm
+%{perl_vendorlib}/Math/BigInt/Trace.pm
+%{_mandir}/man3/big*.3*
