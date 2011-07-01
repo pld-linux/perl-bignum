@@ -8,13 +8,13 @@
 Summary:	bignum - Transparent BigNumber support for Perl
 Summary(pl.UTF-8):	bignum - przezroczysta obsługa wielkich liczb dla Perla
 Name:		perl-bignum
-Version:	0.23
+Version:	0.25
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Math/%{pnam}-%{version}.tar.gz
-# Source0-md5:	900309ca9416e64dd391bf47eb63414d
+# Source0-md5:	2b375ffde482708be9f3a7d673d3687c
 URL:		http://search.cpan.org/dist/bignum/
 %if %{with tests}
 BuildRequires:	perl-Math-BigInt >= 1.83
