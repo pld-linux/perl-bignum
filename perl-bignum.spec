@@ -8,23 +8,23 @@
 Summary:	bignum - Transparent BigNumber support for Perl
 Summary(pl.UTF-8):	bignum - przezroczysta obsługa wielkich liczb dla Perla
 Name:		perl-bignum
-Version:	0.29
+Version:	0.32
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Math/%{pnam}-%{version}.tar.gz
-# Source0-md5:	2b7f6af7b3f24ab2e9e9e6c95b7ec8fd
+# Source0-md5:	0df3a7c83541ff19cab23af7d9394a31
 URL:		http://search.cpan.org/dist/bignum/
 %if %{with tests}
-BuildRequires:	perl-Math-BigInt >= 1.83
-BuildRequires:	perl-Math-BigRat >= 0.19
-BuildRequires:	perl-Test-Simple >= 0.47
+BuildRequires:	perl-Math-BigInt >= 1.88
+BuildRequires:	perl-Math-BigRat >= 0.21
+BuildRequires:	perl-Test-Simple >= 0.62
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Requires:	perl-Math-BigInt >= 1.83
-Requires:	perl-Math-BigRat >= 0.19
+Requires:	perl-Math-BigInt >= 1.88
+Requires:	perl-Math-BigRat >= 0.21
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -74,4 +74,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorlib}/Math/BigFloat
 %{perl_vendorlib}/Math/BigFloat/Trace.pm
 %{perl_vendorlib}/Math/BigInt/Trace.pm
-%{_mandir}/man3/big*.3*
+%{_mandir}/man3/bigint.3pm*
+%{_mandir}/man3/bignum.3pm*
+%{_mandir}/man3/bigrat.3pm*
